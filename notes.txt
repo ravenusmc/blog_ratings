@@ -1,0 +1,25 @@
+def nearby(lng1, lat1, lng2, lat2)
+  if (lng1-lng2).abs <= 0.01 && (lat1-lat2).abs <= 0.01
+    return true
+  else
+    return false
+  end
+end
+
+def show
+  @buses = HTTParty.get('http://developer.itsmarta.com/BRDRestService/RestBusRealTimeService/GetAllBus')
+
+  @bus_count = 0
+
+  @nearby_buses = []
+
+  @buses.each do |bus|
+    if nearby(@location.longitude, @location.latitude,
+      bus["LONGITUDE"].to_f, bus["LATITUDE"].to_f)
+      @bus_count += 1
+      @nearby_buses.push(bus)
+    end
+  end
+end
+
+Link: https://github.com/ravenusmc/marta_finder/blob/master/app/controllers/locations_controller.rb

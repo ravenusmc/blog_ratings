@@ -1,6 +1,10 @@
 # Blog_Ratings
 ## Intro
 
+This is another blog project with PHP. I'm not sure why I like to make these so
+much but I do. The good news is that the next PHP project that I attempt will
+be a site to buy and sell items. 
+
 
 
 # Getting started
