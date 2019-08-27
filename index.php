@@ -2,9 +2,16 @@
 <link rel="stylesheet" type="text/css" href="./assets/css/landing.css">
 
 <main>
-  
-
 </main>
+
+<section>
+  <h1>One</h1>
+</section>
+
+<section>
+  <h1>TWO</h1>
+</section>
+
 
 
 <!-- <div class="container height_fix">
