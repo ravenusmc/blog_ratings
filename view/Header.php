@@ -13,20 +13,25 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- CSS for this page -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/header.css">
 </head>
 <body>
   <div class="navbar-fixed">
 
     <!-- Start of navbar -->
     <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#">Blog Ratings</a>
+      <a class="navbar-brand font-color title_box" href="#">Blog Ratings</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="../controller/index.php">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link font-color" href="../controller/index.php">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-color" href="../controller/index.php">Login<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <?php if ($navbar == True) : ?>
