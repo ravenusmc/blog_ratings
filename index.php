@@ -26,17 +26,20 @@
     <p class='margin_fix center section_paragraph'>In the market place of ideas see what people think of
       your ideas.
     </p>
-    <div class='button_div'>
+    <div class='button_div button_div_margin_fix'>
       <button>How it Works</button>
     </div>
   </div>
 
-  <div>
-    <h1>One</h1>
+  <div class='words_div'>
+    <p class='center section_title'>Join Now</p>
+    <p class='margin_fix center section_paragraph'>Come out out and join the conversation!</p>
+    <div class='button_div'>
+      <button>Join</button>
+    </div>
   </div>
 
-  <div>
-    <h1>One</h1>
+  <div class='section_three_image'>
   </div>
 
 </section>
