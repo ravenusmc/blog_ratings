@@ -72,6 +72,14 @@ button:hover {
   background-size: cover;
 }
 
+.section_two_image {
+  background-image: url('../images/sec_2.jpg');
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media only all and (max-width: 950px) {
 
   section {
