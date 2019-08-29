@@ -1,3 +1,4 @@
+/* This CSS file contains the CSS for the header and the footer */
 .font-color {
   color: black;
 }
@@ -5,4 +6,20 @@
 .title_box {
   border: 2px solid black;
   padding: 10px;
+}
+
+/* CSS for the footer */
+footer {
+  height: 300px;
+  background-color: #0AB8B4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
 }
