@@ -13,6 +13,30 @@ main {
   height: 100%;
 }
 
+.title_area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 3px solid #0AB8B4;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1em;
+}
+
+.sub_title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 35px;
+}
+
 /* CSS for the section area */
 section {
   display: grid;
