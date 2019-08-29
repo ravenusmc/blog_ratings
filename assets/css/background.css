@@ -1,0 +1,22 @@
+/* The CSS in this file will be for the background page */
+
+/* CSS for the header */
+header {
+  background-image: url('../images/works_one.jpg');
+  height: 520px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* CSS for the main section */
+main {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.title {
+  margin-top: 75px;
+  color: #333;
+  text-transform: uppercase;
+}

@@ -17,7 +17,7 @@
     <p class='center section_title font'>Write Your ideas, express yourself</p>
     <p class='margin_fix center section_paragraph font'>Let others know what you think and why you think it</p>
     <div class='button_div button_div_margin_fix'>
-      <button class='font'>How it Works</button>
+      <button class='font'><a href="background.php">How it Works</a></button>
     </div>
   </div>
 
@@ -33,7 +33,7 @@
       your ideas.
     </p>
     <div class='button_div button_div_margin_fix'>
-      <button class='font'>How it Works</button>
+      <button class='font'><a href="background.php">How it Works</a></button>
     </div>
   </div>
 
@@ -41,7 +41,7 @@
     <p class='center section_title font'>Join Now</p>
     <p class='margin_fix center section_paragraph font'>Come out out and join the conversation!</p>
     <div class='button_div button_div_margin_fix'>
-      <button class='font'>Join</button>
+      <button class='font'><a href="login.php">Join</a></button>
     </div>
   </div>
 
