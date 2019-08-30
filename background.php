@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="./assets/css/generic.css">
 <link rel="stylesheet" type="text/css" href="./assets/css/background.css">
 
-<header>
+<header class='background_header'>
 </header>
 
 <main>
@@ -42,7 +42,7 @@
       <div class='paragraph_div'>
         <h1 class='font center'>Rated</h1>
         <p class='font center'>Third get rated. The most popular posting move to the
-          top. But beware there's no commenting here! 
+          top. But beware there's no commenting here!
         </p>
       </div>
     </div>

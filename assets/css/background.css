@@ -1,7 +1,7 @@
 /* The CSS in this file will be for the background page */
 
 /* CSS for the header */
-header {
+.background_header {
   background-image: url('../images/works_one.jpg');
   height: 520px;
   background-position: center;

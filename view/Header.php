@@ -19,10 +19,26 @@
   <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="navbar-fixed">
 
+  <header class='navbar_header'>
+    <h1 class='logo font'>Blog Ratings</h1>
+    <input type="checkbox" id='nav-toggle' class='nav-toggle'>
+    <nav>
+      <ul>
+        <li><a href='#'>Home</a></li>
+        <li><a href="background.php">Background</a></li>
+        <li><a href='#'>Join</a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class='nav-toggle-label'>
+      <span></span>
+    </label>
+  </header>
+
+
+  <!-- <div class="navbar-fixed"> -->
     <!-- Start of navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <!-- <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand font-color title_box" href="#">Blog Ratings</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -36,16 +52,12 @@
             <a class="nav-link font-color" href="../controller/index.php">Login<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <?php if ($navbar == True) : ?>
-              <a class="nav-link" href="../logout.php">Log Out</a>
-            <?php endif; ?>
           </li>
         </ul>
       </div>
-    </nav>
+    </nav> -->
     <!-- End of Navbar -->
-
-  </div>
+  <!-- </div> -->
 
 
 </body>
