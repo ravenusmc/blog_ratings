@@ -25,7 +25,7 @@
     <input type="checkbox" id='nav-toggle' class='nav-toggle'>
     <nav>
       <ul>
-        <li><a href='#'>Home</a></li>
+        <li><a href="index.php">Home</a></li>
         <li><a href="background.php">Background</a></li>
         <li><a href='#'>Join</a></li>
       </ul>

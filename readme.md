@@ -2,10 +2,8 @@
 ## Intro
 
 This is another blog project with PHP. I'm not sure why I like to make these so
-much but I do. The good news is that the next PHP project that I attempt will
-be a site to buy and sell items. 
-
-
+much but I do. The project will allow a user to create an account, write a blog and
+have it rated by people who live in their area.
 
 # Getting started
 ### Installing
