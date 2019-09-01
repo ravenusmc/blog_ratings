@@ -10,7 +10,6 @@ have it rated by people who live in their area.
 
 1. Clone the repo
 
-
 ### Technology Stack
 
 1. PHP 7
