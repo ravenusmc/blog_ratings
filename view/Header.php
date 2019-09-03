@@ -27,6 +27,7 @@
       <ul>
         <li><a href="index.php">Home</a></li>
         <li><a href="background.php">Background</a></li>
+        <li><a href='login.php'>Login</a></li>
         <li><a href='#'>Join</a></li>
       </ul>
     </nav>

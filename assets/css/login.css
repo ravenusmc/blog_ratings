@@ -1,0 +1,17 @@
+/* The CSS in this file deals with the login page */
+:root {
+  --clr: #006194;
+}
+
+main {
+  min-height: 60vh;
+  display: grid;
+  place-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+  margin-top: 100px;
+}
