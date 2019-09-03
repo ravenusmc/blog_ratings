@@ -7,7 +7,7 @@
   <form class='form'>
 
     <div class='form-item'>
-      <input type='text' class='form-input' placeholder="first name" aria-label="first name">
+      <input type='text' class='form-input' placeholder="Username" aria-label="Username">
     </div>
 
     <div class='form-item'>
