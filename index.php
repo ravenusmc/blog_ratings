@@ -41,7 +41,7 @@
     <p class='center section_title font'>Join Now</p>
     <p class='margin_fix center section_paragraph font'>Come out out and join the conversation!</p>
     <div class='button_div button_div_margin_fix'>
-      <button class='font'><a href="login.php">Join</a></button>
+      <button class='font'><a href='signup.php'>Join</a></button>
     </div>
   </div>
 

@@ -28,7 +28,7 @@
         <li><a href="index.php">Home</a></li>
         <li><a href="background.php">Background</a></li>
         <li><a href='login.php'>Login</a></li>
-        <li><a href='#'>Join</a></li>
+        <li><a href='signup.php'>Join</a></li>
       </ul>
     </nav>
     <label for="nav-toggle" class='nav-toggle-label'>
