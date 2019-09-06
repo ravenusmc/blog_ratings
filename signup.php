@@ -11,6 +11,14 @@
     </div>
 
     <div class='form-item'>
+      <input type='text' class='form-input' placeholder="Firstname" aria-label="Firstname">
+    </div>
+
+    <div class='form-item'>
+      <input type='text' class='form-input' placeholder="Lastname" aria-label="Lastname">
+    </div>
+
+    <div class='form-item'>
       <input type='password' class='form-input' placeholder="Password" aria-label="Password">
     </div>
 
