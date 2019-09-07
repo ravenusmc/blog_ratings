@@ -19,6 +19,22 @@
     </div>
 
     <div class='form-item'>
+      <input type='text' class='form-input' placeholder="Address" aria-label="Address">
+    </div>
+
+    <div class='form-item'>
+      <input type='text' class='form-input' placeholder="City" aria-label="City">
+    </div>
+
+    <div class='form-item'>
+      <input type='text' class='form-input' placeholder="State" aria-label="State">
+    </div>
+
+    <div class='form-item'>
+      <input type='password' class='form-input' placeholder="Password" aria-label="Password">
+    </div>
+
+    <div class='form-item'>
       <input type='password' class='form-input' placeholder="Password" aria-label="Password">
     </div>
 
