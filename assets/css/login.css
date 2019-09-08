@@ -61,11 +61,13 @@ main {
   height: 1px;
   background: rgba(0, 0, 0, 0.1);
 }
+
 .form-button {
   background: var(--clr);
   color: white;
   padding: 1.25em 2.25em;
 }
+
 @media only screen and (min-width: 550px){
   .form {
     flex-direction: row;
