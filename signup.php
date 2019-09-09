@@ -19,7 +19,7 @@
 
 <main>
 
-  <h1 class>
+  <h1 class='center'>Sign Up</h1>
 
   <form method="post" class='form'>
 
@@ -52,7 +52,7 @@
     </div>
 
     <div class='form-item'>
-      <input type='password' class='form-input' name='password_2' placeholder="Password" aria-label="Password">
+      <input type='password' class='form-input' name='password_2' placeholder="Confirm Password" aria-label="Password">
     </div>
 
     <button type="submit" name="login" class='form-button' type='submit'>Submit</button>
