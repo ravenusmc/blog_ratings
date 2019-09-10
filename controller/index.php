@@ -23,9 +23,9 @@
 
   if ($allowed){
     switch ($action) {
-      //This case will bring the user to the home page
+      //This case will bring the user to the blog page
       case 'home':
-        $topics = get_all_Topics();
+        // $topics = get_all_Topics();
         include('home.php');
         break;
       }

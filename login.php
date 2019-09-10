@@ -27,31 +27,29 @@
       $user = get_one_user($username, $user_table_password);
       $_SESSION["username"] = $username;
       $_SESSION["user_id"] = $user['user_id'];
-      $message = '<label>Password is Right!</label>';
-      // header("location: controller/index.php");
-      // exit();
+      header("location: controller/index.php");
+      exit();
     }else {
       $message = '<label>Password is Wrong!</label>';
     }
   }
 
 ?>
-
-
+<?php include 'view/header.php'; ?>
 <link rel="stylesheet" type="text/css" href="./assets/css/generic.css">
 <link rel="stylesheet" type="text/css" href="./assets/css/login.css">
 
 <main>
 
-  <form method="post" class='form'>
+  <!-- Start of error handling -->
+  <?php
+    if (isset($message)){
+      echo $message;
+    }
+  ?>
+  <!-- End of error handling -->
 
-    <!-- Start of error handling -->
-    <?php
-      if (isset($message)){
-        echo $message;
-      }
-    ?>
-    <!-- End of error handling -->
+  <form method="post" class='form'>
 
     <div class='form-item'>
       <input name='username' type='text' class='form-input' placeholder="Username" aria-label="Username">
