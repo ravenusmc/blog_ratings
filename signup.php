@@ -4,9 +4,12 @@
     session_start();
   }
   //Pulling in the databases
-  //require('./model/database.php');
-  //global $db;
+  require('./model/database.php');
+  global $db;
   require('key.php');
+
+  //This line will be used to display messages
+  $message = "";
 
   if (isset($_POST["login"])){
     $username = filter_input(INPUT_POST, 'username');
@@ -20,7 +23,7 @@
     $password_2 = filter_input(INPUT_POST, 'password_2');
 
     //Hashing the password
-    $password_hashed = password_hash($password, PASSWORD_DEFAULT);
+    $password_hashed = password_hash($password_1, PASSWORD_DEFAULT);
 
     //These lines will get the latitude and longitude from google maps.
     $address = $address . ' ' . $city . ' ' . $state . ' ' . $zip;
@@ -30,13 +33,48 @@
     $latitude = $output->results[0]->geometry->location->lat;
     $longitude = $output->results[0]->geometry->location->lng;
 
-    echo $latitude;
-    echo $longitude;
+    //This SQL query checks to see if the username is in the users table.
+    $query = "SELECT * FROM users WHERE
+              username = :username";
+    $statement = $db->prepare($query);
+    $statement->bindValue(':username', $username);
+    $count = $statement->rowCount();
+
+    //Conditional statements based on what the query returns.
+    if ($count > 0){
+      $message = '<label class="errorMsg">Username Taken!</label>';
+    }else if ($password_1 != $password_2) {
+      $message = '<label class="errorMsg">Passwords Do Not Match!</label>';
+    }else {
+      //Error messages for DB connection issues
+      ini_set('display_errors', 1);
+      ini_set('display_startup_errors', 1);
+      error_reporting(E_ALL);
+      //Query to add new user to the users table
+      $query = "INSERT INTO users
+                  (username, firstname, lastname, city, state, zip, latitude, longitude, password)
+                VALUES
+                  (:username, :firstname, :lastname, :city, :state, :zip, :latitude, :longitude, :password)";
+      $statement = $db->prepare($query);
+      $statement->bindValue(':username', $username);
+      $statement->bindValue(':firstname', $firstname);
+      $statement->bindValue(':lastname', $lastname);
+      $statement->bindValue(':city', $city);
+      $statement->bindValue(':state', $state);
+      $statement->bindValue(':zip', $zip);
+      $statement->bindValue(':latitude', $latitude);
+      $statement->bindValue(':longitude', $longitude);
+      $statement->bindValue(':password', $password_hashed);
+      $statement->execute();
+      $statement->closeCursor();
+      //Message to alert user that they signed up
+      $message = '<label>User Signed Up!</label>';
+    }
+
   }
 
 ?>
-
-
+<?php include 'view/header.php'; ?>
 <link rel="stylesheet" type="text/css" href="./assets/css/generic.css">
 <link rel="stylesheet" type="text/css" href="./assets/css/signup.css">
 
@@ -45,6 +83,14 @@
   <h1 class='center'>Sign Up</h1>
 
   <form method="post" class='form'>
+
+    <!-- Start of error handling -->
+    <?php
+      if (isset($message)){
+        echo $message;
+      }
+    ?>
+    <!-- End of error handling -->
 
     <div class='form-item'>
       <input type='text' class='form-input' name='username' placeholder="User Name" aria-label="Username">

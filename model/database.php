@@ -1,5 +1,5 @@
 <?php
-    $dsn = 'mysql:host=localhost;dbname=blog_ratings';
+    $dsn = 'mysql:host=localhost;dbname=ratings';
     $username = 'root';
     $password = 'root';
     try {
