@@ -7,7 +7,6 @@
   //require('./model/database.php');
   //global $db;
   require('key.php');
-  echo $test;
 
   if (isset($_POST["login"])){
     $username = filter_input(INPUT_POST, 'username');
@@ -16,6 +15,7 @@
     $address = filter_input(INPUT_POST, 'address');
     $city = filter_input(INPUT_POST, 'city');
     $state = filter_input(INPUT_POST, 'state');
+    $zip = filter_input(INPUT_POST, 'zip');
     $password_1 = filter_input(INPUT_POST, 'password_1');
     $password_2 = filter_input(INPUT_POST, 'password_2');
 
@@ -23,18 +23,20 @@
     $password_hashed = password_hash($password, PASSWORD_DEFAULT);
 
     //These lines will get the latitude and longitude from google maps.
-    $address = $street . ' ' . $town . ' ' . $state . ' ' . $zip;
+    $address = $address . ' ' . $city . ' ' . $state . ' ' . $zip;
     $prepAddr = str_replace(' ','+', $address);
     $geocode = file_get_contents('https://maps.googleapis.com/maps/api/geocode/json?address='.$prepAddr.'&key='.$api_key);
     $output = json_decode($geocode);
     $latitude = $output->results[0]->geometry->location->lat;
     $longitude = $output->results[0]->geometry->location->lng;
 
+    echo $latitude;
+    echo $longitude;
   }
 
 ?>
 
-<?php include 'view/header.php'; ?>
+
 <link rel="stylesheet" type="text/css" href="./assets/css/generic.css">
 <link rel="stylesheet" type="text/css" href="./assets/css/signup.css">
 
