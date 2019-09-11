@@ -14,7 +14,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <!-- CSS for this page -->
-  <link rel="stylesheet" type="text/css" href="./assets/css/header.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./assets/css/header.css"> -->
   <!-- Font for project -->
   <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
 </head>

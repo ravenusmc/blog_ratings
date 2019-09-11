@@ -37,6 +37,8 @@
 ?>
 <?php include 'view/header.php'; ?>
 <link rel="stylesheet" type="text/css" href="./assets/css/generic.css">
+<!-- CSS for the header -->
+<link rel="stylesheet" type="text/css" href="./assets/css/header.css">
 <link rel="stylesheet" type="text/css" href="./assets/css/login.css">
 
 <main>
