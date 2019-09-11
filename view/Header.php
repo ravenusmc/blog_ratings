@@ -29,6 +29,11 @@
         <li><a href="background.php">Background</a></li>
         <li><a href='login.php'>Login</a></li>
         <li><a href='signup.php'>Join</a></li>
+        <?php if ($navbar == True) : ?>
+          <li><a href="../index.php">Home</a></li>
+          <li><a href="../background.php">Background</a></li>
+          <li><a href="../logout.php">Log Out</a></li>
+        <?php endif; ?>
       </ul>
     </nav>
     <label for="nav-toggle" class='nav-toggle-label'>
