@@ -25,13 +25,13 @@
     <input type="checkbox" id='nav-toggle' class='nav-toggle'>
     <nav>
       <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="background.php">Background</a></li>
-        <li><a href='login.php'>Login</a></li>
-        <li><a href='signup.php'>Join</a></li>
+        <?php if ($navbar != True) : ?>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="background.php">Background</a></li>
+          <li><a href='login.php'>Login</a></li>
+          <li><a href='signup.php'>Join</a></li>
+        <?php endif; ?>
         <?php if ($navbar == True) : ?>
-          <li><a href="../index.php">Home</a></li>
-          <li><a href="../background.php">Background</a></li>
           <li><a href="../logout.php">Log Out</a></li>
         <?php endif; ?>
       </ul>
@@ -40,30 +40,5 @@
       <span></span>
     </label>
   </header>
-
-
-  <!-- <div class="navbar-fixed"> -->
-    <!-- Start of navbar -->
-    <!-- <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand font-color title_box" href="#">Blog Ratings</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link font-color" href="../controller/index.php">Home<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link font-color" href="../controller/index.php">Login<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-          </li>
-        </ul>
-      </div>
-    </nav> -->
-    <!-- End of Navbar -->
-  <!-- </div> -->
-
 
 </body>

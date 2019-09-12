@@ -14,10 +14,13 @@
 <link rel="stylesheet" type="text/css" href="../assets/css/generic.css">
 <!-- CSS for the header -->
 <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
-<!-- <link rel="stylesheet" type="text/css" href="../assets/css/home.css"> -->
+<!-- CSS for this page -->
+<link rel="stylesheet" type="text/css" href="../assets/css/home.css">
 
+<main class='homeMainSection'>
 
+  <h1>Home</h1>
 
-<h1>Home</h1>
+</main>
 
 <?php include '../view/Footer.php'; ?>
