@@ -1,5 +1,9 @@
 /* The css in this file is for the home page */
 .homeMainSection {
   height: 600px;
-  border: 2px solid red;
+  border: 2px solid white;
+}
+
+section {
+  margin-top: 100px;
 }

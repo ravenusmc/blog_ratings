@@ -32,6 +32,7 @@
           <li><a href='signup.php'>Join</a></li>
         <?php endif; ?>
         <?php if ($navbar == True) : ?>
+          <li><a href="../controller/create.php">Create Blog</a></li>
           <li><a href="../logout.php">Log Out</a></li>
         <?php endif; ?>
       </ul>
