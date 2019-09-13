@@ -15,3 +15,12 @@
 <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
 <!-- CSS for this page -->
 <link rel="stylesheet" type="text/css" href="../assets/css/create.css">
+
+<main class='createMainSection'>
+
+  <form>
+  </form>
+
+</main>
+
+<?php include '../view/Footer.php'; ?>

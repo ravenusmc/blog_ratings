@@ -1,1 +1,5 @@
 /* The CSS in this folder is for the create.php file */
+.createMainSection {
+  height: 600px;
+  border: 2px solid white;
+}
