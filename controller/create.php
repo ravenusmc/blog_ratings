@@ -20,7 +20,7 @@
 
   <section>
 
-    <h2 class='center font'>MAKE YOUR STATEMENT</h2>
+    <h2 class='center font'>MAKE YOUR STATEMENT!!</h2>
 
     <form method="post">
 
