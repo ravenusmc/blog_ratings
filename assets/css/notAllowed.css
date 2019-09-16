@@ -1,0 +1,17 @@
+/* The CSS in this file will deal with the not allowed page */
+
+#notAllowedDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.color {
+  color: red;
+}
+
+.color:hover {
+  color: black;
+}
