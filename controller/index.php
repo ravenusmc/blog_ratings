@@ -8,9 +8,7 @@
   }
   //Pulling in the databases
   require('../model/database.php');
-  // require('../model/helpers.php');
-  // require('../model/topics.php');
-  // require('../model/comments.php');
+  require('../model/blog.php');
 
   //Setting a default action
   $action = filter_input(INPUT_POST, 'action');
@@ -27,6 +25,14 @@
       case 'home':
         // $topics = get_all_Topics();
         include('home.php');
+        break;
+      //This action will submit a new blog posting
+      case 'createTopic':
+        $blog_post = filter_input(INPUT_POST, 'blog');
+        $user_id = $id;
+        $votes = 0;
+        add_blog_entry($blog_post, $user_id, $votes);
+        include('create.php');
         break;
       }
   }else {

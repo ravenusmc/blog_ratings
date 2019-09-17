@@ -22,8 +22,8 @@
 
     <h2 class='center font'>MAKE YOUR STATEMENT!!</h2>
 
-    <form method="post">
-
+    <form action="index.php" method="post">
+      <input type="hidden" name="action" value="createTopic" />
       <div class='form-item'>
         <textarea name='blog' type='text' class='form-input' placeholder="Blog!" aria-label="Blog" rows="4" cols="50">
         </textarea>
