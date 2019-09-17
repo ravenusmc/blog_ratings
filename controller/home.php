@@ -28,23 +28,6 @@
 
   </section>
 
-  <section id='createBlog'>
-
-    <h2 class='center font'>MAKE YOUR STATEMENT!!</h2>
-
-    <form class='createBlogForm' method="post">
-
-      <div class='form-item'>
-        <textarea name='blog' type='text' class='form-input' placeholder="Blog!" aria-label="Blog" rows="4" cols="50">
-        </textarea>
-      </div>
-
-      <button>Submit</button>
-
-    </form>
-
-  </section>
-
 </main>
 
 <?php include '../view/Footer.php'; ?>

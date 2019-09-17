@@ -7,20 +7,3 @@
 section {
   margin-top: 100px;
 }
-/* The below CSS is for the add a blog section */
-.createMainSection {
-  height: 600px;
-  border: 2px solid white;
-}
-
-#createBlog {
-  margin-top: 100px;
-}
-
-.createBlogForm {
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
