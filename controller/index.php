@@ -23,7 +23,7 @@
     switch ($action) {
       //This case will bring the user to the blog page
       case 'home':
-        // $topics = get_all_Topics();
+        $blogs = get_all_Blogs();
         include('home.php');
         break;
       //This action will submit a new blog posting

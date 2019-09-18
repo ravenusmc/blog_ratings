@@ -23,6 +23,9 @@
 
       <!-- Blog area -->
       <div>
+         <?php foreach ($blogs as $blog) : ?>
+            <p><?php echo $blog['blog']; ?></p>
+         <?php endforeach; ?>
       </div>
       <!-- End blog area -->
 
