@@ -18,7 +18,7 @@
 
 <main class='homeMainSection'>
 
-  <section>
+  <section class='blogSection'>
       <h1 class='center font'>BLOGS!!</h1>
 
       <!-- Blog area -->

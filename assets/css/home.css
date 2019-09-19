@@ -7,3 +7,11 @@
 section {
   margin-top: 100px;
 }
+
+/* CSS for the blog area */
+.blogSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -32,7 +32,7 @@
         $user_id = $id;
         $votes = 0;
         add_blog_entry($blog_post, $user_id, $votes);
-        include('create.php');
+        include('home.php');
         break;
       }
   }else {
