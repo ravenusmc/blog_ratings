@@ -22,11 +22,12 @@
       <h1 class='center font'>BLOGS!!</h1>
 
       <!-- Blog area -->
-      <div>
-         <?php foreach ($blogs as $blog) : ?>
-            <p><?php echo $blog['blog']; ?></p>
-         <?php endforeach; ?>
+      <?php foreach ($blogs as $blog) : ?>
+      <div class='blog_div'>
+        <p><?php echo $blog['blog']; ?></p>
+        <p>Vote</p>
       </div>
+      <?php endforeach; ?>
       <!-- End blog area -->
 
   </section>
