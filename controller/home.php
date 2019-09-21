@@ -24,8 +24,15 @@
       <!-- Blog area -->
       <?php foreach ($blogs as $blog) : ?>
       <div class='blog_div'>
-        <p><?php echo $blog['blog']; ?></p>
-        <p>Vote</p>
+        
+        <div>
+          <p><?php echo $blog['blog']; ?></p>
+        </div>
+
+        <div>
+          <p>Vote</p>
+        </div>
+
       </div>
       <?php endforeach; ?>
       <!-- End blog area -->
