@@ -4,8 +4,15 @@
   border: 2px solid white;
 }
 
-section {
+.homeSectionArea {
+  display: grid;
+  grid-template-columns: 20% 80%;
   margin-top: 100px;
+  border: 2px solid red;
+}
+
+.nav_area {
+  border: 2px solid blue;
 }
 
 /* CSS for the blog area */

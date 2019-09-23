@@ -18,24 +18,35 @@
 
 <main class='homeMainSection'>
 
-  <section class='blogSection'>
-      <h1 class='center font'>BLOGS!!</h1>
+  <section class='homeSectionArea'>
 
-      <!-- Blog area -->
-      <?php foreach ($blogs as $blog) : ?>
-      <div class='blog_div'>
-        
-        <div>
-          <p><?php echo $blog['blog']; ?></p>
+    <div class='nav_area'>
+      <h1>hi</h1>
+      <form>
+      </form>
+    </div>
+
+    <!-- Blog area -->
+    <div class='blogSection'>
+
+        <h1 class='center font'>BLOGS!!</h1>
+
+        <?php foreach ($blogs as $blog) : ?>
+        <div class='blog_div'>
+
+          <div>
+            <p><?php echo $blog['blog']; ?></p>
+          </div>
+
+          <div>
+            <p>Vote</p>
+          </div>
+
         </div>
+        <?php endforeach; ?>
 
-        <div>
-          <p>Vote</p>
-        </div>
-
-      </div>
-      <?php endforeach; ?>
-      <!-- End blog area -->
+    </div>
+    <!-- End blog area -->
 
   </section>
 
