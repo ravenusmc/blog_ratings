@@ -37,14 +37,14 @@
             <form action="index.php" method="post">
               <input type="hidden" name="action" value="change_vote" />
               <input type="hidden" name="up" value="up" />
-              <input type="hidden" name="topic_id" value="<?php echo $topic['topic_id']; ?>" />
-              <button type="submit" name="change_vote"><i class="far fa-thumbs-up"></i></button>
+              <input type="hidden" name="blog_id" value="<?php echo $blog['blog_id']; ?>" />
+              <button type="submit"><i class="far fa-thumbs-up"></i></button>
             </form>
 
             <form action="index.php" method="post">
               <input type="hidden" name="action" value="change_vote" />
               <input type="hidden" name="down" value="down" />
-              <input type="hidden" name="topic_id" value="<?php echo $topic['topic_id']; ?>" />
+              <input type="hidden" name="blog_id" value="<?php echo $blog['blog_id']; ?>" />
               <button type="submit" name="change_vote"><i class="far fa-thumbs-down"></i></button>
             </form>
 

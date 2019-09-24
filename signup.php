@@ -47,9 +47,9 @@
       $message = '<label class="errorMsg">Passwords Do Not Match!</label>';
     }else {
       //Error messages for DB connection issues
-      ini_set('display_errors', 1);
-      ini_set('display_startup_errors', 1);
-      error_reporting(E_ALL);
+      // ini_set('display_errors', 1);
+      // ini_set('display_startup_errors', 1);
+      // error_reporting(E_ALL);
       //Query to add new user to the users table
       $query = "INSERT INTO users
                   (username, firstname, lastname, city, state, zip, latitude, longitude, password)

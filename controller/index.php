@@ -37,6 +37,24 @@
         add_blog_entry($blog_post, $user_id, $votes);
         include('create.php');
         break;
+      //This case will change the ranking of a vote
+      case 'change_vote':
+        $blog_id = filter_input(INPUT_POST, 'blog_id');
+        $vote_up = filter_input(INPUT_POST, 'up');
+        $vote_down = filter_input(INPUT_POST, 'down');
+        if ($vote_up){
+          $blog = get_one_blog($blog_id);
+          $new_vote = $blog['votes'] + 1;
+          change_vote($new_vote, $blog_id);
+        }
+        if ($vote_down){
+          $blog = get_one_blog($blog_id);
+          $new_vote = $blog['votes'] - 1;
+          change_vote($new_vote, $blog_id);
+        }
+        $blogs = get_all_Blogs();
+        include('home.php');
+        break;
       }
   }else {
     include('notAllowed.php');
