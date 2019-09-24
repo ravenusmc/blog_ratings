@@ -26,6 +26,9 @@
         $blogs = get_all_Blogs();
         include('home.php');
         break;
+      case 'createTopicPage':
+        include('create.php');
+        break;
       //This action will submit a new blog posting
       case 'createTopic':
         $blog_post = filter_input(INPUT_POST, 'blog');

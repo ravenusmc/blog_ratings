@@ -20,12 +20,6 @@
 
   <section class='homeSectionArea'>
 
-    <div class='nav_area'>
-      <h1>hi</h1>
-      <form>
-      </form>
-    </div>
-
     <!-- Blog area -->
     <div class='blogSection'>
 

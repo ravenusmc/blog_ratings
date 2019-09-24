@@ -30,6 +30,8 @@
           <li><a href="<?php echo $fullPath; ?>signup.php">Join</a></li>
         <?php endif; ?>
         <?php if ($navbar == True) : ?>
+          <li><a href="?action=home">Blogs</a></li>
+          <li><a href="?action=createTopicPage">Create Blog</a></li>
           <li><a href="../logout.php">Log Out</a></li>
         <?php endif; ?>
       </ul>
