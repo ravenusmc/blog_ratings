@@ -50,7 +50,17 @@
 
           </div>
 
+          <p>Votes: <?php echo $blog['votes']; ?></p>
+          <?php if ($id == $blog['user_id'] ) : ?>
+          <form action="index.php" method="post">
+            <input type="hidden" name="action" value="deleteBlog" />
+            <input type="hidden" name="blog_id" value="<?php echo $blog['blog_id']; ?>" />
+            <button type="submit" name="delete_blog">Delete Blog</button>
+          </form>
+          <?php endif; ?>
         </div>
+
+
         <?php endforeach; ?>
 
     </div>

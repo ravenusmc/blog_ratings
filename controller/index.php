@@ -37,6 +37,13 @@
         add_blog_entry($blog_post, $user_id, $votes);
         include('create.php');
         break;
+      //This case statement will delete a blog
+      case 'deleteBlog':
+        $blog_id = filter_input(INPUT_POST, 'blog_id');
+        delete_blog($blog_id);
+        $blogs = get_all_Blogs();
+        include('home.php');
+        break;
       //This case will change the ranking of a vote
       case 'change_vote':
         $blog_id = filter_input(INPUT_POST, 'blog_id');

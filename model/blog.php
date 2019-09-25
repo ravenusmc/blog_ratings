@@ -52,4 +52,15 @@
     $statement->closeCursor();
   }
 
+  //This function will allow the user who created a blog entry to delete their blog
+  function delete_blog($blog_id){
+    global $db;
+    $query = 'DELETE FROM blog
+              WHERE blog_id = :blog_id';
+    $statement = $db->prepare($query);
+    $statement->bindValue(':blog_id', $blog_id);
+    $statement->execute();
+    $statement->closeCursor();
+  }
+
 ?>
