@@ -40,7 +40,7 @@
               <input type="hidden" name="blog_id" value="<?php echo $blog['blog_id']; ?>" />
               <button type="submit"><i class="far fa-thumbs-up"></i></button>
             </form>
-
+            &nbsp;&nbsp;&nbsp;
             <form action="index.php" method="post">
               <input type="hidden" name="action" value="change_vote" />
               <input type="hidden" name="down" value="down" />
@@ -52,10 +52,10 @@
 
           <p>Votes: <?php echo $blog['votes']; ?></p>
           <?php if ($id == $blog['user_id'] ) : ?>
-          <form action="index.php" method="post">
+          <form id='deleteForm' action="index.php" method="post">
             <input type="hidden" name="action" value="deleteBlog" />
             <input type="hidden" name="blog_id" value="<?php echo $blog['blog_id']; ?>" />
-            <button type="submit" name="delete_blog">Delete Blog</button>
+            <button class='deleteBlog' type="submit" name="delete_blog">Delete Blog</button>
           </form>
           <?php endif; ?>
         </div>

@@ -32,3 +32,22 @@
   justify-content: center;
   align-items: center;
 }
+
+#deleteForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border-color: #0AB8B4;
+  background-color: #0AB8B4;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+button:hover {
+  border-color: #8CEAE8;
+  background-color: #8CEAE8;
+}
