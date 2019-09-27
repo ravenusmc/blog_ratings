@@ -33,6 +33,15 @@
     $latitude = $output->results[0]->geometry->location->lat;
     $longitude = $output->results[0]->geometry->location->lng;
 
+    //Having issues with the google geocode api it seems so this block of code
+    //ensures that the two lat and long variables have a value to be placed
+    //into the database. 
+    if (!$latitude){
+      $latitude = 0;
+    }
+    if (!$longitude){
+      $longitude = 0;
+    }
     //This SQL query checks to see if the username is in the users table.
     $query = "SELECT * FROM users WHERE
               username = :username";
@@ -47,9 +56,9 @@
       $message = '<label class="errorMsg">Passwords Do Not Match!</label>';
     }else {
       //Error messages for DB connection issues
-      // ini_set('display_errors', 1);
-      // ini_set('display_startup_errors', 1);
-      // error_reporting(E_ALL);
+      ini_set('display_errors', 1);
+      ini_set('display_startup_errors', 1);
+      error_reporting(E_ALL);
       //Query to add new user to the users table
       $query = "INSERT INTO users
                   (username, firstname, lastname, city, state, zip, latitude, longitude, password)
@@ -69,6 +78,8 @@
       $statement->closeCursor();
       //Message to alert user that they signed up
       $message = '<label>User Signed Up!</label>';
+      //Rerouting user to the login page
+      include 'login.php';
     }
 
   }
