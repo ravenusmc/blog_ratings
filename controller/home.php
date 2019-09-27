@@ -23,12 +23,12 @@
     <!-- Blog area -->
     <div class='blogSection'>
 
-        <h1 class='center font'>BLOGS!!</h1>
+        <h1 class='center font'>BLOGS:</h1>
 
         <?php foreach ($blogs as $blog) : ?>
         <div class='blog_div'>
 
-          <div>
+          <div class='blog'>
             <p><?php echo $blog['blog']; ?></p>
           </div>
 
@@ -50,7 +50,7 @@
 
           </div>
 
-          <p>Votes: <?php echo $blog['votes']; ?></p>
+          <p class='blog'>Votes: <?php echo $blog['votes']; ?></p>
           <?php if ($id == $blog['user_id'] ) : ?>
           <form id='deleteForm' action="index.php" method="post">
             <input type="hidden" name="action" value="deleteBlog" />
@@ -58,6 +58,7 @@
             <button class='deleteBlog' type="submit" name="delete_blog">Delete Blog</button>
           </form>
           <?php endif; ?>
+
         </div>
 
 
